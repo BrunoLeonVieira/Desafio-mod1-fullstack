@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio - mod1</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1 class="center">Pesquisa de usuários</h1>
+
+    <!-- BLOCO DE PESQUISA -->
+    <div class="container">
+      <div class="row">
+        <div class="input-field col s9">
+          <input id="name-user" type="text" />
+          <label for="name-user">Digite o nome</label>
+        </div>
+        <div class="col s3 valign-wrapper">
+          <!-- prettier-ignore -->
+          <a id="btn-search" class="waves-effect waves-light btn">
+            <i class="material-icons left">search</i>Buscar</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCO DE RESULTADOS -->
+    <div class="container">
+      <div class="row">
+        <div class="result col s12 m5">
+          <h3 id="headerUsers">Nenhum usuário fitrato</h3>
+          <div id="tabUsers"></div>
+        </div>
+
+        <div class="result col s12 m5">
+          <h3 id="headerStatistics">Nada a ser exibido</h3>
+          <div id="tabStatistics"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
